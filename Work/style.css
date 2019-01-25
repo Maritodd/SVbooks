@@ -8,13 +8,13 @@
 }
 
 .page-conteiner {
-  background: url("images/fon2.jpg") no-repeat top center;
+  background: url("images/58.jpg") no-repeat top center;
   background-size: cover;
   min-height: 957px;
   display: flex;
   position: initial;
   flex-direction: column;
-  background-color:rgba(0, 0, 0, 0.39);
+ /* background-color:rgba(0, 0, 0, 0.603);*/
 }
 
 .main-header {
@@ -24,6 +24,7 @@
   padding-bottom: 30px;
   align-items: flex-start;
   justify-content: space-between;
+  background-color:rgba(0, 0, 0, 0.603);
 }
 
 .logo {
@@ -35,11 +36,18 @@
   font-size: 55px;
   text-decoration: none;
 }
+/*
+.logo:hover {
+  opacity: .5;
+  transition: opacity .9s ease;
+  color: rgb(102, 255, 0);
+  text-decoration: none;
+}*/
 
 .menu {
   padding-top: 33px;
   padding-bottom: 33px;
-  background-color:rgba(0, 0, 0, 0.39);
+  /*background-color:rgba(0, 0, 0, 0.205);*/
 }
 
 .menu-link {
@@ -49,17 +57,27 @@
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  /*background-color:rgba(0, 0, 0, 0.39);*/
 }
 
 .menu-link:hover {
   opacity: .5;
-  transition: opacity .4s ease;
-  color: rgb(255, 115, 0);
+  transition: opacity .5s ease;
+  color: rgb(102, 255, 0);
   text-decoration: none;
 }
+/*
+.button1 {
+  color: rgb(255, 255, 255); 
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.button1:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}*/
 
 .main-title__h1 {
+  
   font-family: Montserrat;
   padding: 10px;
   margin-right: 155px;
@@ -68,8 +86,9 @@
 }
 
 .content {
-  background-color:rgba(0, 0, 0, 0.39);
-  color: #FFF;
+  padding-bottom: 150px;
+ /* background-color:rgba(0, 0, 0, 0.603);*/
+  color: black;
   padding: 10px;
   margin-right: 155px;
   margin-left: 155px;
