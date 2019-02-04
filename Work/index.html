@@ -6,41 +6,153 @@
     <title>Paper Restoration Design Co.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Norican" rel="stylesheet">
-    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400, 500, 600, 700" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400, 500, 600, 700" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Norican:" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <!-- <script src="main.js"></script> -->
 </head>
 <body class="body">
-<!--header-->
     <div class="page-conteiner"> 
-        <header class="main-header">
-            <a class="logo" href="/home/">SVBooks</a>
-                <nav class="menu">
-                    <a class="menu-link button1" href="/home/">Home</a>
-                    <a class="menu-link" href="/services/">Services</a>
-                    <a class="menu-link" href="/restoration/">Restoration</a>
-                    <a class="menu-link" href="/insurance/">Insurance</a>
-                    <a class="menu-link" href="/about/">About</a>
-                    <a class="menu-link" href="/contact/">Contact</a>
-                    </nav>   
-            </header>  
-        <div class="content">   
-            <h1 class="main-title__h1">Welcome to Paper Restoration Design Co.!</h1>
-            <h2 class="main-title__h2">Our company working more than 20 years on the bookbinding and restoration field</h2>
-            <p>As a 20 year experienced conservator, Slava is confident to work with antique and new books in 
-                cloth and leather bindings as well as maps and documents printed on paper.</p>
-            <p>Slava began working with paper in 1997 when he was a student at the Holy Trinity Seminary Russian 
-                Orthodox monastery at Jordanville New York accredited by State University of New York. 
-                He got a job at the monastery bindery, where monks of the monastery taught me how to restore antique 
-                religious books and how to bind the new ones. Since then books and paper became his passion.</p>
-            <p>He mastered his abilities with the help of very experienced and well-known masters in this field 
-                James Twomey professional bookbinder and conservator (professional associate of American Institute for 
-                Conservation), Scott Kellar (independent professional bookbinder) who taught Slava blind and gold hand 
-                tooling of fine leather bindings.</p>
-        </div>
-    
-        </div>
+        <div class="header">
+            <a class="logo" href="/home">SVBooks</a>
+            <div class="navbar" id="myTopnav">
+                <button class="tablink" onclick="openPage('Home', this, '')" id="defaultOpen">Home</button>
+                <button class="tablink" onclick="openPage('Services', this, '')">Services</button>
+                <button class="tablink" onclick="openPage('Restoration', this, '')">Restoration</button>
+                <button class="tablink" onclick="openPage('Insurance', this, '')">Insurance</button>
+                <button class="tablink" onclick="openPage('About', this, '')">About</button>
+                <button class="tablink" onclick="openPage('Contact', this, '')">Contact</button>
+                <!-- <a href="javascript:void(0);" onclick="myFunction()">
+                    <div class="icon" onclick="myFunc(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                        </div>
+                    </a> -->
+                </div>
+            </div>
+<!-- content -->
+            <div id="Home" class="tabcontent">
+                <h1>Welcome to Paper (Book & Paper) Restoration Design!</h1>
+                <img class="slava" src="images/slava.jpg" alt="Slava">
+                <div class="content"> 
+                    <h2>Our company working more than 20 years on the bookbinding and restoration field</h2>
+                    <p>As a 20 year experienced conservator, Slava is confident to work with antique and new books in 
+                        cloth and leather bindings as well as maps and documents printed on paper.</p>
+                    <p>Slava began working with paper in 1997 when he was a student at the Holy Trinity Seminary Russian 
+                        Orthodox monastery at Jordanville New York accredited by State University of New York. 
+                        He got a job at the monastery bindery, where monks of the monastery taught me how to restore antique 
+                        religious books and how to bind the new ones. Since then books and paper became his passion.</p>
+                    <p>He mastered his abilities with the help of very experienced and well-known masters in this field 
+                        James Twomey professional bookbinder and conservator (professional associate of American Institute for 
+                        Conservation), Scott Kellar (independent professional bookbinder) who taught Slava blind and gold hand 
+                        tooling of fine leather bindings.</p>
+                    </div>
+                </div>
+            <div id="Services" class="tabcontent">
+                <h2>Services</h2> 
+                <div class="content">  
+                    <p>The deacidification and restoration of:
+                            Rare and antique books
+                            Family Bibles including a vast collection of replacement covers, clasps, genealogy pages, and spines
+                            Church records
+                            Special collections of Research Libraries, State and Local Archives, Historical Libraries, and Seminaries
+                             
+                            Complete treatment and encapsulation of documents.
+                            Conservation storage boxes for books.
+                            Digital scanning and archival formatting of books and documents.
+                            On-site evaluation and assessment of collections.
+                            Workshops on basic book conservation skills.
+                            Seminars and presentations to increase conservation awareness.
+                            Limited edition bookbinding.
+                            Conservation of wall maps and prints.
+                            </p>
+                        </div>
+                </div>
 
+            <div id="Restoration" class="tabcontent">
+                <h2>Restoration</h2>
+                <p>Paper Restoration Design Co started when Slava taught Katrin how to bind, restore and preserve books. Inspired by Slava’s work everyone in the family started to work with books and paper. 
+                        This company is a new family company with 20 years experience. 
+                        As Slava says by preserving the past, we are saving the future.
+                        
+                        In our company 
+                        Slava Vovkovskiy
+                        Book and paper conservator
+                        Trained at Holy Trinity Orthodox Monastery
+                        Specialising in Bibles, Atlases and Eastern European Bindings
+                        
+                        Associates
+                        Katrin Vovkovskiy
+                        Specialised in Leather bindings, storage boxes, Atlases
+                        
+                        Mary Denichenko
+                        Specialised in cleaning and renewing books and atlases
+                        Yaroslav Melnyk(Maritodd)
+                        Front-end Dev, website organization
+                        
+                        
+                        </p>
+                </div>
+
+            <div id="Insurance" class="tabcontent">
+                <h2 class="title-h2">Insurance</h2>
+                <p>Who we are and what we do.</p>
+                </div>    
+        
+            <div id="About" class="tabcontent">
+                <h2 class="title-h2">About</h2>
+                <p>Who we are and what we do.</p>
+                </div>
+              
+            <div id="Contact" class="tabcontent">
+                <h2 class="title-h2">Contact</h2>
+                <p>Slava Vovkovskiy
+                        sv_books@yahoo.com
+                       (224) 616-4698
+                       mail: 
+                       12 South Lake Ave, 
+                       Third Lake, IL 60030
+                       United States
+                       
+                       PO Box #7276, Grayslake, IL, 60030
+                       
+                       </p>
+                </div>
+            </div>
+        <div class="footer">
+            <div class="rights">
+                <a>Copyright &copy; 2019 SVBooks </a>
+                <a class="maritodd"><span class="who">Po</span><span class="who1">we</span><span class="who2">red</span><span class="who3"> by </span><span class="who4"> Ma</span><span class="who5">ri</span><span class="who6">to</span><span class="who7">dd</span></a>
+            </div>
+            </div>
+        </div> 
+<script>
+    // Menu script
+
+    function openPage(pageName, elem, color) {
+        let i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elem.style.backgroundColor = color;
+    }
+
+    document.getElementById("defaultOpen").click();
+
+        //responsive menu script
+
+    // function myFunc(x) {
+    //     x.classList.toggle("change");
+    // }
+    
+</script> 
 </body>
-</html>
+</html> 
