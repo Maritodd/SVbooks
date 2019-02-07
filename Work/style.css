@@ -9,15 +9,23 @@ html {
 .body {
   padding: 0;
   margin: 0 auto;
-  background: rgb(175, 154, 111);
   font-family: "Open Sans", "sans-serif";
+  background-color: rgb(73, 65, 46);
+}
+
+img {
+  width: 100%;
 }
 
 .page-conteiner {
-  background: url("images/theme3.jpg") no-repeat center;
+  background-image: url("images/theme3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  min-height: 967px;
-  /* height: 100%; */
+  background-attachment: fixed;
+  min-height: 895px;
+  text-decoration: none;
+ 
 }
 
 .header {
@@ -98,80 +106,113 @@ html {
 /* ---------------------------footer--------------------------- */
 
 .footer {
+  position: relative; 
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Montserrat';
   font-size: 18px;
   padding: 10px;
   color: #FFF;
   background-color:rgba(0, 0, 0, 0.897);
   border-top: 5px solid rgb(221, 221, 221);
-  flex-direction: row-reverse;
 }
 
 .maritodd {
   font-family: 'Faster One', cursive;
-  
+  float: right;
+  opacity: .5;
+  transition: all .6s ease;
+  -webkit-transition: all .6s ease;
 }
 
+.maritodd:hover {
+  opacity: 1;
+  transition: all .6s ease-in;
+  -webkit-transition: all .6s ease-in;
+  text-decoration: none;
+}
+.who17 {
+  color: rgb(255, 255, 102);
+}
+.who18 {
+  color: rgb(255, 255, 102);
+}
+.who19 {
+  color: rgb(255, 255, 102);
+}
 .who {
-  color: rgb(227, 248, 32);
+  color: rgb(255, 255, 102);
 }
 
 .who1 {
-  color: rgb(250, 194, 40);
+  color: rgb(179, 255, 102);
 }
 
 .who2 {
-  color: rgb(250, 120, 33);
+  color: rgb(140, 255, 102);
 }
 
 .who3 {
-  color: rgb(253, 43, 43);
+  color: rgb(102, 255, 102);
 }
 
 .who4 {
-  color: rgb(250, 65, 126);
+  color: rgb(102, 255, 140);
 }
 
 .who5 {
-  color: rgb(250, 45, 199);
+  color: rgb(102, 255, 179);
 }
 
 .who6 {
-  color: rgb(213, 65, 250);
+  color: rgb(102, 255, 217);
 }
 
 .who7 {
-  color: rgb(151, 45, 250);
+  color: rgb(102, 255, 255);
+}
+
+.who8 {
+  color: rgb(102, 217, 255);
+}
+
+.who9 {
+  color: 	rgb(102, 179, 255);
+}
+
+.who10 {
+  color: rgb(102, 140, 255);
+}
+
+.who11 {
+  color: rgb(102, 102, 255);
+}
+
+.who12 {
+  color: rgb(140, 102, 255);
+}
+
+.who13 {
+  color: rgb(179, 102, 255);
+}
+
+.who14 {
+  color: rgb(217, 102, 255);
+}
+
+.who15 {
+  color: rgb(255, 102, 255);
+}
+
+.who16 {
+  color: rgb(255, 102, 217)	;
 }
   /* ---------------------------icon--------------------------- */
 
-/* .icon {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: rgb(255, 255, 255);
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-} */
-
 /* ---------------------------adaptive--------------------------- */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   /* For laptops: */
   .header {
     text-align: center;
@@ -184,7 +225,7 @@ html {
     padding: 0;
   }
   .logo {
-    padding: 0px;
+    padding: 0;
   }
 }
 @media screen and (max-width: 800px) {
@@ -199,10 +240,18 @@ html {
   }
   .tabcontent {
     width: 100%;
+    font-size: 15px;
     padding: 0;
+  }
+  .content {
+    font-size: 18px;
   }
   .logo {
     padding: 0px;
+  }
+  .footer {
+    font-size: 15px;
+    display: block;
   }
 }
 @media screen and (max-width: 500px) {
@@ -211,7 +260,18 @@ html {
     width: 100%;
     padding: 0;
   }
-  /* .content {
-    text-indent: 5px;
-  } */
+  .logo {
+    border-bottom: 5px solid rgb(221, 221, 221);
+  }
+  .tabcontent {
+    font-size: 15px;
+  }
+  .content {
+    font-size: 18px;
+  }
+  .footer {
+    font-size: 15px;
+    align-items: center;
+    display: block;
+  }
 }
