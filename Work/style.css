@@ -1,9 +1,10 @@
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 
-body, 
-html {
+body, html {
   width: 100%;
-  height: 100%;
 }
 
 .body {
@@ -17,6 +18,12 @@ img {
   width: 100%;
 }
 
+.wrapper {
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+}
+
 .page-conteiner {
   background-image: url("images/theme3.jpg");
   background-position: center;
@@ -25,7 +32,7 @@ img {
   background-attachment: fixed;
   min-height: 895px;
   text-decoration: none;
- 
+  flex: 1 0 auto;
 }
 
 .header {
@@ -68,13 +75,13 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   background-color:rgba(0, 0, 0, 0);
-  transition: all .6s ease;
-  -webkit-transition: all .6s ease;
+  transition: all .7s ease;
+  -webkit-transition: all .7s ease;
 }
 
 .tablink:hover {
-  opacity: .7;
-  transition: all .5s ease;
+  opacity: .8;
+  transition: all .6s ease;
   -webkit-transition: all .6s ease;
   color: rgb(102, 255, 102);
   text-decoration: none;
@@ -83,32 +90,204 @@ img {
 .slava {
   width: 50%;
   float: right;
+  padding: 5px;
 }
 
 .tabcontent {
   /* font-family: 'Montserrat'; */
   color: rgb(255, 255, 255);
-  font-weight: 500;
+  
   font-size: 19px;
   padding: 10px;
   padding-right: 150px;
   padding-left: 150px;
-  /* background-color:rgba(0, 0, 0, 0.5); */
 }
 
 .content {
-  /* font-family: 'Montserrat'; */
   color: rgb(255, 255, 255);
-  text-indent: 35px;
+  text-indent: 20px;
 } 
 
+/* ---------------------------Slideshow--------------------------- */
+
+.restoration-container {
+  position: relative;
+}
+
+.slides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer; 
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: black;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.restoration-container__caption {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: .7;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* ---------------------------Contact--------------------------- */
+
+.contact-container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact input[type="text"], #contact input[type="email"],
+#contact textarea, #contact button[type="submit"] {
+  font: 400 12px/16px;
+}
+
+#contact {
+  background: #f9f9f9;
+  padding: 25px;
+  margin: 50px 0;
+}
+
+#contact h3 {
+  color: green;
+  display: block;
+  font-size: 30px;
+}
+
+#contact h4 {
+  color:#777;
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #AAA;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #0cf;
+  color: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #09c;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus, #contact textarea:focus {
+  outline: 0;
+  border: 1px solid #999;
+}
+
+::-webkit-input-placeholder {
+  color:#888;
+ }
+ :-moz-placeholder {
+  color:#888;
+ }
+ ::-moz-placeholder {
+  color:#888;
+ }
+ :-ms-input-placeholder {
+  color:#888;
+ }
 
 /* ---------------------------footer--------------------------- */
 
 .footer {
-  position: relative; 
-  left: 0;
-  bottom: 0;
   width: 100%;
   font-family: 'Montserrat';
   font-size: 18px;
@@ -116,14 +295,15 @@ img {
   color: #FFF;
   background-color:rgba(0, 0, 0, 0.897);
   border-top: 5px solid rgb(221, 221, 221);
+  display: flex;
+  justify-content: space-between;
 }
 
 .maritodd {
   font-family: 'Faster One', cursive;
-  float: right;
   opacity: .5;
-  transition: all .6s ease;
-  -webkit-transition: all .6s ease;
+  transition: all .7s ease;
+  -webkit-transition: all .7s ease;
 }
 
 .maritodd:hover {
@@ -144,117 +324,95 @@ img {
 .who {
   color: rgb(255, 255, 102);
 }
-
 .who1 {
   color: rgb(179, 255, 102);
 }
-
 .who2 {
   color: rgb(140, 255, 102);
 }
-
 .who3 {
   color: rgb(102, 255, 102);
 }
-
 .who4 {
   color: rgb(102, 255, 140);
 }
-
 .who5 {
   color: rgb(102, 255, 179);
 }
-
 .who6 {
   color: rgb(102, 255, 217);
 }
-
 .who7 {
   color: rgb(102, 255, 255);
 }
-
 .who8 {
   color: rgb(102, 217, 255);
 }
-
 .who9 {
   color: 	rgb(102, 179, 255);
 }
-
 .who10 {
   color: rgb(102, 140, 255);
 }
-
 .who11 {
   color: rgb(102, 102, 255);
 }
-
 .who12 {
   color: rgb(140, 102, 255);
 }
-
 .who13 {
   color: rgb(179, 102, 255);
 }
-
 .who14 {
   color: rgb(217, 102, 255);
 }
-
 .who15 {
   color: rgb(255, 102, 255);
 }
-
 .who16 {
   color: rgb(255, 102, 217)	;
 }
   /* ---------------------------icon--------------------------- */
 
 /* ---------------------------adaptive--------------------------- */
-
-@media screen and (max-width: 1023px) {
-  /* For laptops: */
-  .header {
-    text-align: center;
-  }
-  .navbar {
-    text-align: center;
+@media screen and (max-width: 1080px) {
+  .logo {
+    padding-left: 70px;
   }
   .tabcontent {
-    width: 100%;
-    padding: 0;
-  }
-  .logo {
-    padding: 0;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   /* For tablets: */
   .header {
     display: block;
     text-align: center;
+    padding: 10px;
   }
   .navbar {
     display: block;
     text-align: center;
+    padding: 10px;
   }
   .tabcontent {
     width: 100%;
     font-size: 15px;
-    padding: 0;
+    padding: 5px;
   }
   .content {
     font-size: 18px;
+    padding: 5px;
   }
   .logo {
-    padding: 0px;
+    padding: 5px;
   }
   .footer {
     font-size: 15px;
-    display: block;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   /* For mobile phones: */
   .navbar, .tabcontent, .logo, .slava {
     width: 100%;
@@ -264,14 +422,17 @@ img {
     border-bottom: 5px solid rgb(221, 221, 221);
   }
   .tabcontent {
-    font-size: 15px;
+    font-size: 14px;
+    padding: 3px;
   }
   .content {
     font-size: 18px;
+    padding: 3px;
   }
   .footer {
     font-size: 15px;
-    align-items: center;
-    display: block;
+  }
+  .maritodd {
+    display: none;
   }
 }
