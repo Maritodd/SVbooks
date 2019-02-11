@@ -11,7 +11,8 @@ body, html {
   padding: 0;
   margin: 0 auto;
   font-family: "Open Sans", "sans-serif";
-  background-color: rgb(73, 65, 46);
+  background-color: rgb(58, 52, 38);
+  user-select: none;
 }
 
 img {
@@ -83,7 +84,7 @@ img {
   opacity: .8;
   transition: all .6s ease;
   -webkit-transition: all .6s ease;
-  color: rgb(102, 255, 102);
+  color: rgb(255,215,0);
   text-decoration: none;
 }
 
@@ -108,88 +109,45 @@ img {
   text-indent: 20px;
 } 
 
-/* ---------------------------Slideshow--------------------------- */
+/* ---------------------------Photoshow--------------------------- */
 
-.restoration-container {
+.restoration-container:after {
   position: relative;
-}
-
-.slides {
-  display: none;
-}
-
-.cursor {
-  cursor: pointer;
-}
-
-.prev,
-.next {
-  cursor: pointer; 
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover {
-  background-color: black;
-}
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.restoration-container__caption {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
   display: table;
+  content: "";
   clear: both;
 }
 
-.column {
+.slides {
+  width: 50%;
   float: left;
-  width: 16.66%;
+  padding: 8px;
 }
 
-.demo {
-  opacity: .7;
+.zoom {
+  transition: transform .2s;
 }
 
-.active,
-.demo:hover {
-  opacity: 1;
+.zoom:hover {
+  transform: scale(1.5);
 }
 
 /* ---------------------------Contact--------------------------- */
 
 .contact-container {
-  max-width: 400px;
+  /* max-width: 900px; */
   width: 100%;
   margin: 0 auto;
   position: relative;
+  font-family: "Montserrat";
+  display: inline-flex;
+}
+
+.adress {
+  background: rgba(0, 0, 0, 0.411);
+  padding: 20px;
+  margin: 20px 0;
+  /* border-radius: 13px; */
 }
 
 #contact input[type="text"], #contact input[type="email"],
@@ -198,22 +156,25 @@ img {
 }
 
 #contact {
-  background: #f9f9f9;
-  padding: 25px;
-  margin: 50px 0;
+  background: rgba(0, 0, 0, 0.411);
+  padding: 20px;
+  margin: 20px 0;
+  /* border-radius: 13px; */
 }
 
 #contact h3 {
-  color: green;
-  display: block;
+  color: rgb(0, 247, 255);
+  display: flex;
   font-size: 30px;
+  margin: 5px 0 15px;
 }
 
 #contact h4 {
-  color:#777;
+  color:rgb(255, 255, 255);
   margin: 5px 0 15px;
-  display: block;
-  font-size: 13px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 fieldset {
@@ -222,13 +183,14 @@ fieldset {
   min-width: 100%;
   padding: 0;
   width: 100%;
+  
 }
 
 #contact input[type="text"], #contact input[type="email"],
 #contact textarea {
   width: 100%;
-  border: 1px solid #ccc;
-  background: #FFF;
+  border: 1px solid rgb(184, 184, 184);
+  background: rgb(255, 255, 255);
   margin: 0 0 5px;
   padding: 10px;
 }
@@ -244,21 +206,22 @@ fieldset {
   height: 100px;
   max-width: 100%;
   resize: none;
+ 
 }
 
 #contact button[type="submit"] {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: #0cf;
+  background: rgb(0, 153, 255);
   color: #fff;
   margin: 0 0 5px;
   padding: 10px;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 #contact button[type="submit"]:hover {
-  background: #09c;
+  background: rgb(0, 78, 204);
   -webkit-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
 }
@@ -269,7 +232,7 @@ fieldset {
 
 #contact input:focus, #contact textarea:focus {
   outline: 0;
-  border: 1px solid #999;
+  border: 1px solid rgb(124, 124, 124);
 }
 
 ::-webkit-input-placeholder {
@@ -290,7 +253,7 @@ fieldset {
 .footer {
   width: 100%;
   font-family: 'Montserrat';
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px;
   color: #FFF;
   background-color:rgba(0, 0, 0, 0.897);
@@ -300,6 +263,7 @@ fieldset {
 }
 
 .maritodd {
+  font-size: 18px;
   font-family: 'Faster One', cursive;
   opacity: .5;
   transition: all .7s ease;
@@ -313,64 +277,64 @@ fieldset {
   text-decoration: none;
 }
 .who17 {
-  color: rgb(255, 255, 102);
+  color: rgb(64, 255, 0);
 }
 .who18 {
-  color: rgb(255, 255, 102);
+  color: rgb(0, 255, 0);
 }
 .who19 {
-  color: rgb(255, 255, 102);
+  color: rgb(0, 255, 64);
 }
 .who {
-  color: rgb(255, 255, 102);
+  color: rgb(255, 64, 0);
 }
 .who1 {
-  color: rgb(179, 255, 102);
+  color: rgb(255, 128, 0);
 }
 .who2 {
-  color: rgb(140, 255, 102);
+  color: rgb(255, 191, 0);
 }
 .who3 {
-  color: rgb(102, 255, 102);
+  color: rgb(255, 255, 0);
 }
 .who4 {
-  color: rgb(102, 255, 140);
+  color: rgb(191, 255, 0);
 }
 .who5 {
-  color: rgb(102, 255, 179);
+  color: rgb(128, 255, 0);
 }
 .who6 {
-  color: rgb(102, 255, 217);
+  color: rgb(0, 255, 128);
 }
 .who7 {
-  color: rgb(102, 255, 255);
+  color: rgb(0, 255, 191);
 }
 .who8 {
-  color: rgb(102, 217, 255);
+  color: rgb(0, 255, 255);
 }
 .who9 {
-  color: 	rgb(102, 179, 255);
+  color: 	rgb(0, 191, 255);
 }
 .who10 {
-  color: rgb(102, 140, 255);
+  color: rgb(0, 128, 255);
 }
 .who11 {
-  color: rgb(102, 102, 255);
+  color: rgb(0, 64, 255);
 }
 .who12 {
-  color: rgb(140, 102, 255);
+  color: rgb(0, 0, 255);
 }
 .who13 {
-  color: rgb(179, 102, 255);
+  color: rgb(64, 0, 255);
 }
 .who14 {
-  color: rgb(217, 102, 255);
+  color: 	rgb(128, 0, 255);
 }
 .who15 {
-  color: rgb(255, 102, 255);
+  color: 	rgb(191, 0, 255);
 }
 .who16 {
-  color: rgb(255, 102, 217)	;
+  color: rgb(255, 0, 255);
 }
   /* ---------------------------icon--------------------------- */
 
@@ -384,18 +348,18 @@ fieldset {
     padding-right: 80px;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   /* For tablets: */
   .header {
     display: block;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
   }
-  .navbar {
+  /* .navbar {
     display: block;
     text-align: center;
     padding: 10px;
-  }
+  } */
   .tabcontent {
     width: 100%;
     font-size: 15px;
@@ -411,12 +375,43 @@ fieldset {
   .footer {
     font-size: 15px;
   }
+  .slides {
+    width: 100%;
+    padding: 5px;
+  }
+  .zoom {
+    transition: none;
+  }
+  .zoom:hover {
+    transform: none;
+  }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   /* For mobile phones: */
   .navbar, .tabcontent, .logo, .slava {
     width: 100%;
     padding: 0;
+  }
+  .navbar {
+    text-align: left;
+    float: none;
+    display: block;
+  }
+  .logo {
+    padding-left: 15px;
+    text-align: left;
+    float: none;
+    display: block;
+  }
+  .slides {
+    width: 100%;
+    padding: 5px;
+  }
+  .zoom {
+    transition: none;
+  }
+  .zoom:hover {
+    transform: none;
   }
   .logo {
     border-bottom: 5px solid rgb(221, 221, 221);
