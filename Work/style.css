@@ -77,7 +77,7 @@ body, html {
 }
 
 .tablink:hover {
-  opacity: .8;
+  opacity: .9;
   transition: all .6s ease;
   -webkit-transition: all .6s ease;
   color: rgb(255,215,0);
@@ -86,17 +86,10 @@ body, html {
 
 img {
   width: 100%;
+  transition: all.4s ease-out;
 }
 
-h3 {
-  font-family: "Montserrat";
-}
-
-h2 {
-  font-family: "Montserrat";
-}
-
-h1 {
+h3, h2, h1 {
   font-family: "Montserrat";
 }
 
@@ -118,7 +111,26 @@ h1 {
 
 .content {
   text-indent: 20px;
-} 
+}
+
+/* ---------------------------Services--------------------------- */
+
+.services-content {
+  background-color: #FFF; 
+  padding: 40px;
+  width: 80%;
+  position: relative;
+  color: black;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 0 30px rgba(0,0,0,0.1), 1px 1px 3px rgba(0,0,0,0.2);
+  margin: 20px auto;
+  line-height: normal;
+}
+
+/* .services-content p {
+  line-height: 1;
+} */
+
 
 /* ---------------------------Photoshow--------------------------- */
 
@@ -184,25 +196,46 @@ h1 {
   font-family: 'Montserrat';
   font-style: italic;
   font-size: 22px;
-  color: rgb(255,215,0);
+  color: #FF8000;
 }
 
 .staff-company__name {
   font-size: 20px;
   font-family: 'Montserrat';
-  color: rgb(64, 204, 192);
+  color: #00BFFF	;
 }
 /* ---------------------------Contact--------------------------- */
 
-/* .contact-container {
- 
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  font-family: "Montserrat";
-  display: inline-flex;
+.adress {
+  background-color: rgba(0, 0, 0, 0.445);
+  text-align: center;
+  padding: 170px;
+  border-radius: 10px;
 }
 
+.contact {
+  background-color: #007ade;
+  transition: all .7s ease;
+  -webkit-transition: all .7s ease;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+  font-family: 'Montserrat';
+  font-size: 19px;
+  font-weight: 500;
+  color: azure;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+.contact:hover {
+  background-color:rgb(131, 46, 146);
+  transition: all .7s ease;
+  -webkit-transition: all .7s ease;
+  cursor: pointer;
+}
+/*
 .adress {
   background: rgba(0, 0, 0, 0.411);
   padding: 20px;
@@ -327,6 +360,7 @@ fieldset {
   opacity: .5;
   transition: all .7s ease;
   -webkit-transition: all .7s ease;
+  text-decoration: none;
 }
 
 .maritodd:hover {
@@ -334,6 +368,7 @@ fieldset {
   transition: all .6s ease-in;
   -webkit-transition: all .6s ease-in;
   text-decoration: none;
+  cursor: pointer;
 }
 .who17 {
   color: rgb(64, 255, 0);
@@ -482,6 +517,12 @@ fieldset {
   .content {
     font-size: 18px;
     padding: 3px;
+  }
+  .adress {
+    padding: 50px; 
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
   .footer {
     font-size: 15px;
