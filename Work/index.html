@@ -53,27 +53,26 @@
                     <div class="services-content">  
                             <h2>Services</h2> 
                             <h3>General information</h3>
-                            <p> Restoration - </p>
-                            <p> Conservation - </p>
-                            <p> Preservation - </p>
-                            <p> Repair - </p>
-                            <p> Rebacking - renewal or replacement of the leather or other covering material on the spine and joints of a book. </p>
-                            <p> Re-covering - A book is said to be re-covered when it is provided with a new cover without being resewn, or when new covering material is put on the old boards.  </p>
-                            <p> Covers leather: </p>
-                            <p> cleaning - </p>
-                            <p> patching - </p>
-                            <p> polishing - </p>
-                            <p>Leather binding: 
-                                <p>full bindings - bindings in which the entire cover (back and sides) is formed of the same kind of material  (leather, cloth, paper)</p>
-                                <p>half bindings - bindings in which the spane, a portion of the sides, and the corner of the cover are formed of one kind of material (usually leather) and the rest of the sides of another (such as cloth or paper).</p>
-                                <p>Quarter bindings - binding in which the backbone and small portion of the sides are covered with one kind of materials, and the rest of the sides, including the corners, with another.  </p>
-                                <p>Three-quarter bindings - binding in which the backbone,the corners, and a variable but fairly large portion of the  sides are covered with one kind of materials, and the rest of the sides with another.  </p>
-                            <p>Custom made binding
-                            Gold stamping / Gold tooling - the process of decorating leather or other materials with hand finishing tools, which are applied to the surface of the material with hand pressure. This could be done with using real gold leaf or gold foil.
-                            Blind Tooling - the same process like gold stamping without the use gold leaf, foil or other colouring materials.
-                            Headband - sewn by hand over strip of leather
-                            marbled paper - paper decorated by transferring to its surface intermingled colours which have been floated on gum solution, or size
-                        </p>
+                            <p><span class="services-content__caterogy">Restoration</span>- </p>
+                            <p><span class="services-content__caterogy">Conservation</span>- </p>
+                            <p><span class="services-content__caterogy">Preservation</span>- </p>
+                            <p><span class="services-content__caterogy">Repair</span>- </p>
+                            <p><span class="services-content__caterogy">Rebacking</span>- renewal or replacement of the leather or other covering material on the spine and joints of a book. </p>
+                            <p><span class="services-content__caterogy">Recovering</span>- A book is said to be re-covered when it is provided with a new cover without being resewn, or when new covering material is put on the old boards.  </p>
+                            <p><span class="services-content__caterogy">Covers leather:</span></p>
+                                <p><span class="services-content__caterogy--subtext">cleaning-</span></p>
+                                <p><span class="services-content__caterogy--subtext">patching-</span></p>
+                                <p><span class="services-content__caterogy--subtext">polishing-</span></p>
+                            <p><span class="services-content__caterogy">Leather binding:</span></p>
+                                <p><span class="services-content__caterogy--subtext">full bindings-</span>bindings in which the entire cover (back and sides) is formed of the same kind of material  (leather, cloth, paper)</p>
+                                <p><span class="services-content__caterogy--subtext">half bindings-</span>bindings in which the spane, a portion of the sides, and the corner of the cover are formed of one kind of material (usually leather) and the rest of the sides of another (such as cloth or paper).</p>
+                                <p><span class="services-content__caterogy--subtext">Quarter bindings-</span>binding in which the backbone and small portion of the sides are covered with one kind of materials, and the rest of the sides, including the corners, with another.  </p>
+                                <p><span class="services-content__caterogy--subtext">Three quarter bindings-</span>binding in which the backbone,the corners, and a variable but fairly large portion of the  sides are covered with one kind of materials, and the rest of the sides with another.  </p>
+                            <p><span class="services-content__caterogy">Custom made binding:</span></p>
+                                <p><span class="services-content__caterogy--subtext">Gold stamping / Gold tooling-</span>the process of decorating leather or other materials with hand finishing tools, which are applied to the surface of the material with hand pressure. This could be done with using real gold leaf or gold foil.</p>
+                                <p><span class="services-content__caterogy--subtext">Blind Tooling-</span>the same process like gold stamping without the use gold leaf, foil or other colouring materials.</p>
+                                <p><span class="services-content__caterogy--subtext">Headband-</span>sewn by hand over strip of leather</p>
+                                <p><span class="services-content__caterogy--subtext">marbled paper-</span>paper decorated by transferring to its surface intermingled colours which have been floated on gum solution, or size</p>
                         </p>
                         </div>
                 </div>
@@ -81,7 +80,7 @@
                 <div id="Restoration" class="tabcontent">
                     <h2>Restoration(Before/After)</h2>
                     <div class="restoration-container">
-                        <div class="slides zoom">
+                        <!-- <div class="slides zoom">
                             <img src="images/collage1.jpg" alt="book">
                             </div>
                         <div class="slides zoom">
@@ -101,9 +100,19 @@
                             </div>
                         <div class="slides zoom">
                             <img src="images/collage7.jpg" alt="book">
+                            </div> -->
+                        
+                            <img id="myImg" src="images/collage1.jpg" alt="book1" style="width:100%;max-width:300px">
+                            <img id="myImg" src="images/collage2.jpg" alt="book1" style="width:100%;max-width:300px">
+                            <img id="myImg" src="images/collage3.jpg" alt="book1" style="width:100%;max-width:300px">
+
+                            <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
                             </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
 
                 <div id="Insurance" class="tabcontent">
                     <h2>Insurance</h2>
@@ -142,7 +151,7 @@
                                 <Address>Third Lake, IL 60030</Address>
                                 <Address>United States</Address>
                                 <Address>PO Box #7276, Grayslake, IL, 60030</Address></p>
-                            <a href="mailto:sv_books@yahoo.com"><button class="contact">Contact Us</button></a>
+                                <a href="mailto:sv_books@yahoo.com"><button class="contact">Contact Us</button></a>
                         </div>
                         <!-- <form id="contact" action="" method="post">
                             <h3>Contact Us</h3>
@@ -192,7 +201,20 @@
     document.getElementById("defaultOpen").click();
 
         //responsive menu scriptt
+    var modal = document.getElementById("myModal");
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function() {
+        modal.style.display = 'block';
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
 
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
+        modal.style.display = "none";
+    } 
 </script> 
 </body>
 </html> 
