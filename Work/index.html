@@ -79,32 +79,13 @@
 
                 <div id="Restoration" class="tabcontent">
                     <h2>Restoration(Before/After)</h2>
-                    <div class="restoration-container">
-                        <!-- <div class="slides zoom">
-                            <img src="images/collage1.jpg" alt="book">
-                            </div>
-                        <div class="slides zoom">
-                            <img src="images/collage2.jpg" alt="book">
-                            </div>
-                        <div class="slides zoom">
-                            <img src="images/collage3.jpg" alt="book">
-                            </div>
-                        <div class="slides zoom">
-                            <img src="images/collage4.jpg" alt="book">
-                            </div>
-                        <div class="slides zoom">
-                            <img src="images/collage5.jpg" alt="book">
-                            </div>
-                        <div class="slides zoom">
-                            <img src="images/collage6.jpg" alt="book">
-                            </div>
-                        <div class="slides zoom">
-                            <img src="images/collage7.jpg" alt="book">
-                            </div> -->
-                        
-                            <img id="myImg" src="images/collage1.jpg" alt="book1" style="width:100%;max-width:300px">
-                            <img id="myImg" src="images/collage2.jpg" alt="book1" style="width:100%;max-width:300px">
-                            <img id="myImg" src="images/collage3.jpg" alt="book1" style="width:100%;max-width:300px">
+                    <div class="restoration-container">                
+                            <img id="myImg" class="myImages" src="images/collage1.jpg" alt="book" style="width:100%;max-width:300px">
+                            <img id="myImg" class="myImages" src="images/collage2.jpg" alt="book1" style="width:100%;max-width:300px">
+                            <img id="myImg" class="myImages" src="images/collage4.jpg" alt="book3" style="width:100%;max-width:300px">
+                            <img id="myImg" class="myImages" src="images/collage5.jpg" alt="book4" style="width:100%;max-width:300px">
+                            <img id="myImg" class="myImages" src="images/collage6.jpg" alt="book5" style="width:100%;max-width:300px">
+                            <img id="myImg" class="myImages" src="images/collage7.jpg" alt="book6" style="width:100%;max-width:300px">
 
                             <div id="myModal" class="modal">
                                 <span class="close">&times;</span>
@@ -182,7 +163,8 @@
                 </div>
         </div> 
 <script>
-    // Menu script
+
+////////////////////////////////////////////////////////Menu script///////////////////////////////////////////////////////////////////
 
     function openPage(pageName, elem, color) {
         let i, tabcontent, tablinks;
@@ -200,21 +182,26 @@
 
     document.getElementById("defaultOpen").click();
 
-        //responsive menu scriptt
-    var modal = document.getElementById("myModal");
-    var img = document.getElementById("myImg");
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    img.onclick = function() {
-        modal.style.display = 'block';
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
+//////////////////////////////////////////////////// Modal image script /////////////////////////////////////////////////////////////
+
+    let modal = document.getElementById("myModal");
+    let images = document.getElementsByClassName("myImages");
+    let modalImg = document.getElementById("img01");
+    let captionText = document.getElementById("caption");
+    for (let i = 0; i < images.length; i++) {
+        let img = images[i];
+        img.onclick = function(evt) {
+            modal.style.display = 'block';
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
     }
 
-    var span = document.getElementsByClassName("close")[0];
+    let span = document.getElementsByClassName("close")[0];
     span.onclick = function() {
         modal.style.display = "none";
     } 
+
 </script> 
 </body>
 </html> 
