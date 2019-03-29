@@ -291,9 +291,11 @@ h3, h2, h1 {
   font-style: italic;
   font-size: 22px;
   color: #FF8000;
+ 
 }
 
 .staff-company__name {
+  
   font-size: 20px;
   font-family: 'Montserrat';
   color: #00BFFF	;
