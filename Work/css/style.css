@@ -402,7 +402,7 @@ details {
 /* ---------------------------adaptive--------------------------- */
 
 @media screen and (max-width: 1080px) {
-  .logo {
+  .logo1 {
     padding-left: 70px;
   }
   .tabcontent {
@@ -427,7 +427,7 @@ details {
     font-size: 18px;
     padding: 5px;
   }
-  .logo {
+  .logo1 {
     padding: 5px;
   }
   .footer {
@@ -446,13 +446,13 @@ details {
     float: none;
     display: block;
   }
-  .logo {
+  .logo1 {
     padding-left: 15px;
     text-align: left;
     float: none;
     display: block;
   }
-  .logo {
+  .logo1 {
     border-bottom: 5px solid rgb(221, 221, 221);
   }
   .tabcontent {
