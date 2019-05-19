@@ -46,9 +46,12 @@ body, html {
 }
 
 .logo1 {
-  max-width: 450px;
-  padding-left: 90px;
+  -webkit-max-width: 420px;
+  -webkit-padding-left: 90px;
+  -webkit-padding-top: 15px;
+  max-width: 420px;
   padding-top: 15px;
+  padding-left: 90px;
 }
 
 .navbar {
@@ -150,7 +153,6 @@ details {
 .services-content__caterogy {
   font-weight: 500;
   font-size: 22px;
-  /* text-transform: uppercase; */
   padding: 5px;
 }
 
@@ -310,23 +312,44 @@ details {
 }
 
 .contact {
-  background-color: #007ade;
+  background-color: #6d0303;
   transition: all .7s ease;
   -webkit-transition: all .7s ease;
   padding: 10px;
   border-radius: 10px;
-  width: 250px;
+  width: 220px;
   font-family: 'Montserrat';
   font-size: 23px;
   font-weight: 500;
   color: azure;
   border: none;
-  outline: none;
   text-decoration: none;
 }
 
 .contact:hover {
-  background-color:rgb(131, 46, 146);
+  background-color:#971515;
+  transition: all .7s ease;
+  -webkit-transition: all .7s ease;
+  cursor: pointer;
+}
+
+.find-us {
+  background-color: #003bde;
+  transition: all .7s ease;
+  -webkit-transition: all .7s ease;
+  padding: 10px;
+  border-radius: 10px;
+  width: 220px;
+  font-family: 'Montserrat';
+  font-size: 23px;
+  font-weight: 500;
+  color: azure;
+  text-decoration: none;
+  border: none;
+}
+
+.find-us:hover {
+  background-color:#2a63ff;
   transition: all .7s ease;
   -webkit-transition: all .7s ease;
   cursor: pointer;
