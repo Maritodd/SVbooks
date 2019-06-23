@@ -11,7 +11,7 @@ body, html {
   padding: 0;
   margin: 0 auto;
   font-family: "Open Sans", "sans-serif";
-  background-color: #6e6650;
+  background-color:#332f25;
   /* user-select: none; */
 }
 
@@ -408,6 +408,9 @@ details {
   .tabcontent {
     padding-left: 80px;
     padding-right: 80px;
+  }
+  .contact {
+    margin: 5px;
   }
 }
 
