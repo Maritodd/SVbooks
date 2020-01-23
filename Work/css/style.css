@@ -8,6 +8,7 @@ body, html {
 }
 
 .body {
+  height: 100%;
   padding: 0;
   margin: 0 auto;
   font-family: "Open Sans", "sans-serif";
@@ -22,7 +23,7 @@ body, html {
 }
 
 .page-conteiner {
-  background-image: url('../images/huy4.jpg');
+  background-image: url('../images/main-photo.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -109,6 +110,12 @@ h3, h2, h1 {
   padding: 10px;
   padding-right: 150px;
   padding-left: 150px;
+}
+
+.content-home {
+  text-align: justify;
+  text-indent: 20px;
+  height: 450px;
 }
 
 .content {
